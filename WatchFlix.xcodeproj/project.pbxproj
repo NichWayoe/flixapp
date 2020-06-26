@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AF95A3946CACBE038604228 /* Pods_WatchFlix_WatchFlixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6BB398358AE2EFF233263C /* Pods_WatchFlix_WatchFlixUITests.framework */; };
+		2B0FB84624A5B4E1007D586A /* MoviesGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FB84524A5B4E1007D586A /* MoviesGridViewController.m */; };
+		2B0FB84C24A5C3F5007D586A /* MovieCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0FB84B24A5C3F5007D586A /* MovieCollectionCell.m */; };
+		2B73403C24A3EB43007B1CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73403B24A3EB43007B1CA8 /* AppDelegate.m */; };
+		2B73403F24A3EB43007B1CA8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73403E24A3EB43007B1CA8 /* SceneDelegate.m */; };
+		2B73404524A3EB43007B1CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73404324A3EB43007B1CA8 /* Main.storyboard */; };
+		2B73404724A3EB44007B1CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B73404624A3EB44007B1CA8 /* Assets.xcassets */; };
+		2B73404A24A3EB44007B1CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B73404824A3EB44007B1CA8 /* LaunchScreen.storyboard */; };
+		2B73404D24A3EB44007B1CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73404C24A3EB44007B1CA8 /* main.m */; };
+		2B73405724A3EB44007B1CA8 /* WatchFlixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73405624A3EB44007B1CA8 /* WatchFlixTests.m */; };
+		2B73406224A3EB44007B1CA8 /* WatchFlixUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73406124A3EB44007B1CA8 /* WatchFlixUITests.m */; };
+		2B73407124A3FE4F007B1CA8 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73407024A3FE4F007B1CA8 /* MoviesViewController.m */; };
+		2B73407724A44576007B1CA8 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73407624A44576007B1CA8 /* MovieCell.m */; };
+		2B73407A24A467B6007B1CA8 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B73407924A467B6007B1CA8 /* DetailsViewController.m */; };
+		475AA9E8D7A99C17CAEBB0C0 /* Pods_WatchFlix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86D0BF893D43E11936C0FDE6 /* Pods_WatchFlix.framework */; };
+		9EB849BE324525545F86BB29 /* Pods_WatchFlixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EA8B23661A1A22FAADE93B /* Pods_WatchFlixTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B73405324A3EB44007B1CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B73402F24A3EB43007B1CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B73403624A3EB43007B1CA8;
+			remoteInfo = WatchFlix;
+		};
+		2B73405E24A3EB44007B1CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B73402F24A3EB43007B1CA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B73403624A3EB43007B1CA8;
+			remoteInfo = WatchFlix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28F06928F8403A2CF763B7DB /* Pods-WatchFlix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlix.release.xcconfig"; path = "Target Support Files/Pods-WatchFlix/Pods-WatchFlix.release.xcconfig"; sourceTree = "<group>"; };
+		2B0FB84424A5B4E1007D586A /* MoviesGridViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesGridViewController.h; sourceTree = "<group>"; };
+		2B0FB84524A5B4E1007D586A /* MoviesGridViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesGridViewController.m; sourceTree = "<group>"; };
+		2B0FB84A24A5C3F5007D586A /* MovieCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCollectionCell.h; sourceTree = "<group>"; };
+		2B0FB84B24A5C3F5007D586A /* MovieCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCollectionCell.m; sourceTree = "<group>"; };
+		2B73403724A3EB43007B1CA8 /* WatchFlix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchFlix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73403A24A3EB43007B1CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2B73403B24A3EB43007B1CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2B73403D24A3EB43007B1CA8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		2B73403E24A3EB43007B1CA8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		2B73404424A3EB43007B1CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2B73404624A3EB44007B1CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2B73404924A3EB44007B1CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2B73404B24A3EB44007B1CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73404C24A3EB44007B1CA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B73405224A3EB44007B1CA8 /* WatchFlixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchFlixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73405624A3EB44007B1CA8 /* WatchFlixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchFlixTests.m; sourceTree = "<group>"; };
+		2B73405824A3EB44007B1CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73405D24A3EB44007B1CA8 /* WatchFlixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WatchFlixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B73406124A3EB44007B1CA8 /* WatchFlixUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchFlixUITests.m; sourceTree = "<group>"; };
+		2B73406324A3EB44007B1CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B73406F24A3FE4F007B1CA8 /* MoviesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		2B73407024A3FE4F007B1CA8 /* MoviesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		2B73407524A44576007B1CA8 /* MovieCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		2B73407624A44576007B1CA8 /* MovieCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		2B73407824A467B6007B1CA8 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		2B73407924A467B6007B1CA8 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		53EA8B23661A1A22FAADE93B /* Pods_WatchFlixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchFlixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		661496919B4E47477B516F1D /* Pods-WatchFlixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlixTests.release.xcconfig"; path = "Target Support Files/Pods-WatchFlixTests/Pods-WatchFlixTests.release.xcconfig"; sourceTree = "<group>"; };
+		86D0BF893D43E11936C0FDE6 /* Pods_WatchFlix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchFlix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC6BB398358AE2EFF233263C /* Pods_WatchFlix_WatchFlixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchFlix_WatchFlixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B52536F100EEB1DBDE57B009 /* Pods-WatchFlixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlixTests.debug.xcconfig"; path = "Target Support Files/Pods-WatchFlixTests/Pods-WatchFlixTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DF4926B786493B4DD1E95394 /* Pods-WatchFlix-WatchFlixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlix-WatchFlixUITests.debug.xcconfig"; path = "Target Support Files/Pods-WatchFlix-WatchFlixUITests/Pods-WatchFlix-WatchFlixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3B40CBEA6B4E10DF589A966 /* Pods-WatchFlix-WatchFlixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlix-WatchFlixUITests.release.xcconfig"; path = "Target Support Files/Pods-WatchFlix-WatchFlixUITests/Pods-WatchFlix-WatchFlixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE130C875A11145305D6C635 /* Pods-WatchFlix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchFlix.debug.xcconfig"; path = "Target Support Files/Pods-WatchFlix/Pods-WatchFlix.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B73403424A3EB43007B1CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				475AA9E8D7A99C17CAEBB0C0 /* Pods_WatchFlix.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73404F24A3EB44007B1CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB849BE324525545F86BB29 /* Pods_WatchFlixTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73405A24A3EB44007B1CA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF95A3946CACBE038604228 /* Pods_WatchFlix_WatchFlixUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		162B3D10213E93B35B3AB650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86D0BF893D43E11936C0FDE6 /* Pods_WatchFlix.framework */,
+				AC6BB398358AE2EFF233263C /* Pods_WatchFlix_WatchFlixUITests.framework */,
+				53EA8B23661A1A22FAADE93B /* Pods_WatchFlixTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B73402E24A3EB43007B1CA8 = {
+			isa = PBXGroup;
+			children = (
+				2B73403924A3EB43007B1CA8 /* WatchFlix */,
+				2B73405524A3EB44007B1CA8 /* WatchFlixTests */,
+				2B73406024A3EB44007B1CA8 /* WatchFlixUITests */,
+				2B73403824A3EB43007B1CA8 /* Products */,
+				75C0F1290209AC1D6056FABF /* Pods */,
+				162B3D10213E93B35B3AB650 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B73403824A3EB43007B1CA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B73403724A3EB43007B1CA8 /* WatchFlix.app */,
+				2B73405224A3EB44007B1CA8 /* WatchFlixTests.xctest */,
+				2B73405D24A3EB44007B1CA8 /* WatchFlixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B73403924A3EB43007B1CA8 /* WatchFlix */ = {
+			isa = PBXGroup;
+			children = (
+				2B73407424A3FFB8007B1CA8 /* Views */,
+				2B73407324A3FFAC007B1CA8 /* Models */,
+				2B73407224A3FF59007B1CA8 /* ViewControllers */,
+				2B73403A24A3EB43007B1CA8 /* AppDelegate.h */,
+				2B73403B24A3EB43007B1CA8 /* AppDelegate.m */,
+				2B73403D24A3EB43007B1CA8 /* SceneDelegate.h */,
+				2B73403E24A3EB43007B1CA8 /* SceneDelegate.m */,
+				2B73404324A3EB43007B1CA8 /* Main.storyboard */,
+				2B73404624A3EB44007B1CA8 /* Assets.xcassets */,
+				2B73404824A3EB44007B1CA8 /* LaunchScreen.storyboard */,
+				2B73404B24A3EB44007B1CA8 /* Info.plist */,
+				2B73404C24A3EB44007B1CA8 /* main.m */,
+			);
+			path = WatchFlix;
+			sourceTree = "<group>";
+		};
+		2B73405524A3EB44007B1CA8 /* WatchFlixTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B73405624A3EB44007B1CA8 /* WatchFlixTests.m */,
+				2B73405824A3EB44007B1CA8 /* Info.plist */,
+			);
+			path = WatchFlixTests;
+			sourceTree = "<group>";
+		};
+		2B73406024A3EB44007B1CA8 /* WatchFlixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2B73406124A3EB44007B1CA8 /* WatchFlixUITests.m */,
+				2B73406324A3EB44007B1CA8 /* Info.plist */,
+			);
+			path = WatchFlixUITests;
+			sourceTree = "<group>";
+		};
+		2B73407224A3FF59007B1CA8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2B73406F24A3FE4F007B1CA8 /* MoviesViewController.h */,
+				2B73407024A3FE4F007B1CA8 /* MoviesViewController.m */,
+				2B73407824A467B6007B1CA8 /* DetailsViewController.h */,
+				2B73407924A467B6007B1CA8 /* DetailsViewController.m */,
+				2B0FB84424A5B4E1007D586A /* MoviesGridViewController.h */,
+				2B0FB84524A5B4E1007D586A /* MoviesGridViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2B73407324A3FFAC007B1CA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B73407424A3FFB8007B1CA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B73407524A44576007B1CA8 /* MovieCell.h */,
+				2B73407624A44576007B1CA8 /* MovieCell.m */,
+				2B0FB84A24A5C3F5007D586A /* MovieCollectionCell.h */,
+				2B0FB84B24A5C3F5007D586A /* MovieCollectionCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		75C0F1290209AC1D6056FABF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE130C875A11145305D6C635 /* Pods-WatchFlix.debug.xcconfig */,
+				28F06928F8403A2CF763B7DB /* Pods-WatchFlix.release.xcconfig */,
+				DF4926B786493B4DD1E95394 /* Pods-WatchFlix-WatchFlixUITests.debug.xcconfig */,
+				E3B40CBEA6B4E10DF589A966 /* Pods-WatchFlix-WatchFlixUITests.release.xcconfig */,
+				B52536F100EEB1DBDE57B009 /* Pods-WatchFlixTests.debug.xcconfig */,
+				661496919B4E47477B516F1D /* Pods-WatchFlixTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B73403624A3EB43007B1CA8 /* WatchFlix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73406624A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlix" */;
+			buildPhases = (
+				E1EA837B5C1B13AD07EAF133 /* [CP] Check Pods Manifest.lock */,
+				2B73403324A3EB43007B1CA8 /* Sources */,
+				2B73403424A3EB43007B1CA8 /* Frameworks */,
+				2B73403524A3EB43007B1CA8 /* Resources */,
+				71D209DE37DDF713B62EC2DF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchFlix;
+			productName = WatchFlix;
+			productReference = 2B73403724A3EB43007B1CA8 /* WatchFlix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2B73405124A3EB44007B1CA8 /* WatchFlixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73406924A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlixTests" */;
+			buildPhases = (
+				128FFB7C7185A5F9EA14743E /* [CP] Check Pods Manifest.lock */,
+				2B73404E24A3EB44007B1CA8 /* Sources */,
+				2B73404F24A3EB44007B1CA8 /* Frameworks */,
+				2B73405024A3EB44007B1CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B73405424A3EB44007B1CA8 /* PBXTargetDependency */,
+			);
+			name = WatchFlixTests;
+			productName = WatchFlixTests;
+			productReference = 2B73405224A3EB44007B1CA8 /* WatchFlixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2B73405C24A3EB44007B1CA8 /* WatchFlixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73406C24A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlixUITests" */;
+			buildPhases = (
+				67E00C0D2FA2D58CDA1385BA /* [CP] Check Pods Manifest.lock */,
+				2B73405924A3EB44007B1CA8 /* Sources */,
+				2B73405A24A3EB44007B1CA8 /* Frameworks */,
+				2B73405B24A3EB44007B1CA8 /* Resources */,
+				637D027CFFDC6796F719138D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B73405F24A3EB44007B1CA8 /* PBXTargetDependency */,
+			);
+			name = WatchFlixUITests;
+			productName = WatchFlixUITests;
+			productReference = 2B73405D24A3EB44007B1CA8 /* WatchFlixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B73402F24A3EB43007B1CA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Nicholas Wayoe";
+				TargetAttributes = {
+					2B73403624A3EB43007B1CA8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					2B73405124A3EB44007B1CA8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 2B73403624A3EB43007B1CA8;
+					};
+					2B73405C24A3EB44007B1CA8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 2B73403624A3EB43007B1CA8;
+					};
+				};
+			};
+			buildConfigurationList = 2B73403224A3EB43007B1CA8 /* Build configuration list for PBXProject "WatchFlix" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B73402E24A3EB43007B1CA8;
+			productRefGroup = 2B73403824A3EB43007B1CA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B73403624A3EB43007B1CA8 /* WatchFlix */,
+				2B73405124A3EB44007B1CA8 /* WatchFlixTests */,
+				2B73405C24A3EB44007B1CA8 /* WatchFlixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B73403524A3EB43007B1CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73404A24A3EB44007B1CA8 /* LaunchScreen.storyboard in Resources */,
+				2B73404724A3EB44007B1CA8 /* Assets.xcassets in Resources */,
+				2B73404524A3EB43007B1CA8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73405024A3EB44007B1CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73405B24A3EB44007B1CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		128FFB7C7185A5F9EA14743E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchFlixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		637D027CFFDC6796F719138D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchFlix-WatchFlixUITests/Pods-WatchFlix-WatchFlixUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchFlix-WatchFlixUITests/Pods-WatchFlix-WatchFlixUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchFlix-WatchFlixUITests/Pods-WatchFlix-WatchFlixUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E00C0D2FA2D58CDA1385BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchFlix-WatchFlixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D209DE37DDF713B62EC2DF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchFlix/Pods-WatchFlix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WatchFlix/Pods-WatchFlix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WatchFlix/Pods-WatchFlix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EA837B5C1B13AD07EAF133 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WatchFlix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B73403324A3EB43007B1CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73403C24A3EB43007B1CA8 /* AppDelegate.m in Sources */,
+				2B73407724A44576007B1CA8 /* MovieCell.m in Sources */,
+				2B73407124A3FE4F007B1CA8 /* MoviesViewController.m in Sources */,
+				2B73407A24A467B6007B1CA8 /* DetailsViewController.m in Sources */,
+				2B0FB84C24A5C3F5007D586A /* MovieCollectionCell.m in Sources */,
+				2B73404D24A3EB44007B1CA8 /* main.m in Sources */,
+				2B73403F24A3EB43007B1CA8 /* SceneDelegate.m in Sources */,
+				2B0FB84624A5B4E1007D586A /* MoviesGridViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73404E24A3EB44007B1CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73405724A3EB44007B1CA8 /* WatchFlixTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B73405924A3EB44007B1CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B73406224A3EB44007B1CA8 /* WatchFlixUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B73405424A3EB44007B1CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B73403624A3EB43007B1CA8 /* WatchFlix */;
+			targetProxy = 2B73405324A3EB44007B1CA8 /* PBXContainerItemProxy */;
+		};
+		2B73405F24A3EB44007B1CA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B73403624A3EB43007B1CA8 /* WatchFlix */;
+			targetProxy = 2B73405E24A3EB44007B1CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2B73404324A3EB43007B1CA8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B73404424A3EB43007B1CA8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2B73404824A3EB44007B1CA8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2B73404924A3EB44007B1CA8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2B73406424A3EB44007B1CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2B73406524A3EB44007B1CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2B73406724A3EB44007B1CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE130C875A11145305D6C635 /* Pods-WatchFlix.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75VN7B5QN7;
+				INFOPLIST_FILE = WatchFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.WatchFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B73406824A3EB44007B1CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28F06928F8403A2CF763B7DB /* Pods-WatchFlix.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75VN7B5QN7;
+				INFOPLIST_FILE = WatchFlix/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.WatchFlix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B73406A24A3EB44007B1CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B52536F100EEB1DBDE57B009 /* Pods-WatchFlixTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.watchFlix.WatchFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchFlix.app/WatchFlix";
+			};
+			name = Debug;
+		};
+		2B73406B24A3EB44007B1CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661496919B4E47477B516F1D /* Pods-WatchFlixTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchFlixTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.watchFlix.WatchFlixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WatchFlix.app/WatchFlix";
+			};
+			name = Release;
+		};
+		2B73406D24A3EB44007B1CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF4926B786493B4DD1E95394 /* Pods-WatchFlix-WatchFlixUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.watchFlix.WatchFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchFlix;
+			};
+			name = Debug;
+		};
+		2B73406E24A3EB44007B1CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B40CBEA6B4E10DF589A966 /* Pods-WatchFlix-WatchFlixUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WatchFlixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nwayoe.watchFlix.WatchFlixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WatchFlix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B73403224A3EB43007B1CA8 /* Build configuration list for PBXProject "WatchFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73406424A3EB44007B1CA8 /* Debug */,
+				2B73406524A3EB44007B1CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73406624A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73406724A3EB44007B1CA8 /* Debug */,
+				2B73406824A3EB44007B1CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73406924A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73406A24A3EB44007B1CA8 /* Debug */,
+				2B73406B24A3EB44007B1CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B73406C24A3EB44007B1CA8 /* Build configuration list for PBXNativeTarget "WatchFlixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B73406D24A3EB44007B1CA8 /* Debug */,
+				2B73406E24A3EB44007B1CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B73402F24A3EB43007B1CA8 /* Project object */;
+}

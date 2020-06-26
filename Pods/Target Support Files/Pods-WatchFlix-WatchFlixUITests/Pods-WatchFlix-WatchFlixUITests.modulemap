@@ -1,0 +1,6 @@
+framework module Pods_WatchFlix_WatchFlixUITests {
+  umbrella header "Pods-WatchFlix-WatchFlixUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
