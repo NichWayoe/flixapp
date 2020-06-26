@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,10 +85,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="z8D-2d-Ja5">
-                                <rect key="frame" x="-0.91649464816600812" y="1.2485676086289459" width="414.00000000000011" height="896.00000000000034"/>
+                                <rect key="frame" x="0.0" y="1" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="k7H-lJ-xKh">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="k7H-lJ-xKh">
                                     <size key="itemSize" width="124" height="175"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -97,20 +96,20 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCollectionCell" id="uC0-av-FZ2" customClass="MovieCollectionCell">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="391"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Wv0-oa-BzP">
-                                            <rect key="frame" x="0.0" y="0.0" width="189" height="391"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="124" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="124" height="175"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaB-fm-M5v">
-                                                    <rect key="frame" x="8" y="8" width="240" height="383"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="167"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                             </subviews>
-                                        </collectionViewCellContentView>
+                                        </view>
                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <size key="customSize" width="189" height="391"/>
+                                        <size key="customSize" width="124" height="175"/>
                                         <connections>
                                             <outlet property="posterView" destination="uaB-fm-M5v" id="Fxs-lA-Op5"/>
                                         </connections>
@@ -143,24 +142,31 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ina-0s-Y7R">
-                                        <rect key="frame" x="-108" y="0.0" width="576" height="189"/>
+                                        <rect key="frame" x="-108" y="0.0" width="576" height="340"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bN8-hZ-0cb">
-                                        <rect key="frame" x="0.0" y="126" width="151" height="170"/>
+                                        <rect key="frame" x="18" y="200" width="151" height="211"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6F-Aw-rjm">
-                                        <rect key="frame" x="8" y="335" width="381" height="75"/>
+                                        <rect key="frame" x="21" y="419" width="381" height="139"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU7-Fo-ydC">
-                                        <rect key="frame" x="159" y="197" width="208" height="62"/>
+                                        <rect key="frame" x="177" y="345" width="208" height="37"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW5-61-tNP">
+                                        <rect key="frame" x="177" y="377" width="208" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -174,6 +180,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zOz-24-TGy"/>
                     <connections>
+                        <outlet property="DateLabel" destination="BW5-61-tNP" id="qZL-vv-qt0"/>
                         <outlet property="backdropView" destination="Ina-0s-Y7R" id="Bcf-6O-HSs"/>
                         <outlet property="posterView" destination="bN8-hZ-0cb" id="YKQ-sA-PVu"/>
                         <outlet property="synopsisLabel" destination="J6F-Aw-rjm" id="DUj-2b-29B"/>
@@ -182,13 +189,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AMX-fO-xQt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="1763"/>
+            <point key="canvasLocation" x="137.68115942028987" y="1762.5"/>
         </scene>
-        <!--Item-->
+        <!--Now Playing-->
         <scene sceneID="1a3-6k-Ifs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kfZ-oh-mBa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="AG8-Yx-Rad"/>
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="AG8-Yx-Rad"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pjw-F6-q1i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -203,11 +210,11 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
         </scene>
-        <!--Item-->
+        <!--SuperHero-->
         <scene sceneID="2jX-L7-Xg0">
             <objects>
                 <navigationController id="Mh6-Om-V3k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="J64-36-iHL"/>
+                    <tabBarItem key="tabBarItem" title="SuperHero" image="superhero_tabbar_item" id="J64-36-iHL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xyR-zd-1bh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -239,4 +246,8 @@
             <point key="canvasLocation" x="716" y="-766"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
+    </resources>
 </document>

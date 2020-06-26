@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *titlelable;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *DateLabel;
 @end
 
 @implementation DetailsViewController
@@ -32,6 +33,7 @@
     NSString *fullBackdropURLString = [baseURLString stringByAppendingString:BackdropURLString];
      NSURL *backdropURL = [NSURL URLWithString:fullBackdropURLString];
     [self.backdropView setImageWithURL:backdropURL];
+    self.DateLabel.text = self.movie[@"release_date"];
     self.titlelable.text = self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"overview"];
     [self.titlelable sizeToFit];
