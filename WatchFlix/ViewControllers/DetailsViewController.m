@@ -22,8 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    NSString *baseURLString =@"https://image.tmdb.org/t/p/w500";
+    
+    NSString *baseURLString = @"https://image.tmdb.org/t/p/w500";
     NSString *posterURLString = self.movie[@"poster_path"];
     NSString *fullPosterURLString = [baseURLString stringByAppendingString:posterURLString];
     NSURL *posterURL = [NSURL URLWithString:fullPosterURLString];
@@ -32,17 +32,13 @@
     NSString *BackdropURLString = self.movie[@"backdrop_path"];
     NSString *fullBackdropURLString = [baseURLString stringByAppendingString:BackdropURLString];
      NSURL *backdropURL = [NSURL URLWithString:fullBackdropURLString];
+    
     [self.backdropView setImageWithURL:backdropURL];
     self.DateLabel.text = self.movie[@"release_date"];
     self.titlelable.text = self.movie[@"title"];
     self.synopsisLabel.text = self.movie[@"overview"];
     [self.titlelable sizeToFit];
     [self.synopsisLabel sizeToFit];
-    
-                                       
-                                    
-    
-   
 }
 
 /*

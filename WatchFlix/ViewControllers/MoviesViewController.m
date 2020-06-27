@@ -12,6 +12,7 @@
 #import "UIImageView+AFNetworking.h"
 
 @interface MoviesViewController () <UITableViewDataSource, UITableViewDelegate,UISearchBarDelegate>
+
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *ActivityIndicator;
 @property (nonatomic, strong) NSArray *movies;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -24,9 +25,11 @@
 @implementation MoviesViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.searchBar.delegate = self;
+    
     [self fetchMovies];
    
     self.refreshControl = [[UIRefreshControl alloc] init];
@@ -35,15 +38,19 @@
 }
 -(void) fetchMovies{
     [self.ActivityIndicator startAnimating];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title"
-              message:@"Poor Connection"
-       preferredStyle:(UIAlertControllerStyleAlert)];
-       UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Try Again"
-         style:UIAlertActionStyleDefault
-       handler:^(UIAlertAction * _Nonnull action) {
-           [self fetchMovies];
-       }];
-       [alert addAction:cancelAction];
+    
+    UIAlertController *alert = [UIAlertController
+                                alertControllerWithTitle:@"Title"
+                                message:@"Poor Connection"
+                                preferredStyle:(UIAlertControllerStyleAlert)];
+    
+    UIAlertAction *cancelAction = [UIAlertAction
+                                   actionWithTitle:@"Try Again"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * _Nonnull action) {
+                                    [self fetchMovies];}];
+    [alert addAction:cancelAction];
+    
     NSURL *url = [NSURL URLWithString:@"https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10.0];
     NSURLSession *session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:nil delegateQueue:[NSOperationQueue mainQueue]];
@@ -55,22 +62,23 @@
            }
            else {
                NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-               // TODO: Get the array of movies
                self.movies = dataDictionary[@"results"];
                self.filteredMovies =self.movies;
                [self.tableView reloadData];
-              
            }
         [self.refreshControl endRefreshing];
        }];
     [task resume];
 }
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:
     (NSInteger)section{
     return self.filteredMovies.count;
 }
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:
-(NSIndexPath *)indexPath{
+
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
     MovieCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MovieCell"];
     NSDictionary *movie = self.filteredMovies[indexPath.row];
     cell.titleLabel.text = movie[@"title"];
@@ -86,10 +94,9 @@
     [self.ActivityIndicator stopAnimating];
     return cell;
 }
-#pragma mark - Navigation
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
     UITableViewCell *tappedCell = sender;
     NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
     NSDictionary *movie = self.movies[indexPath.row];
@@ -97,15 +104,29 @@
     detailsViewController.movie = movie;
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
 if (searchText.length != 0) {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"title contains[c] %@",searchText];
     self.filteredMovies = [self.filteredMovies filteredArrayUsingPredicate:predicate];
 }
+    
 else{
     self.filteredMovies = self.movies;    
 }
     [self.tableView reloadData];
 }
 
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar {
+    self.searchBar.showsCancelButton = YES;
+}
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar {
+    self.searchBar.showsCancelButton = NO;
+    self.searchBar.text = @"";
+    [self.searchBar resignFirstResponder];
+    self.filteredMovies = self.movies;
+    [self.tableView reloadData];
+    
+
+}
 @end
