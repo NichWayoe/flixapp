@@ -23,9 +23,7 @@
 
 @implementation MoviesViewController
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    [self.ActivityIndicator startAnimating];
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.searchBar.delegate = self;
@@ -36,6 +34,7 @@
     [self.tableView insertSubview:self.refreshControl atIndex:0];
 }
 -(void) fetchMovies{
+    [self.ActivityIndicator startAnimating];
     UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Title"
               message:@"Poor Connection"
        preferredStyle:(UIAlertControllerStyleAlert)];
@@ -60,6 +59,7 @@
                self.movies = dataDictionary[@"results"];
                self.filteredMovies =self.movies;
                [self.tableView reloadData];
+              
            }
         [self.refreshControl endRefreshing];
        }];
