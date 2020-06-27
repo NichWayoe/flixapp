@@ -45,6 +45,7 @@ Here's a walkthrough of implemented user stories:
 https://i.imgur.com/2elVE1v.gifv
 
 **video of network and activity bar**
+
 https://i.imgur.com/3X2deNE.gifv
 ## Notes
 
