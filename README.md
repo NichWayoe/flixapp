@@ -42,11 +42,10 @@ Here's a walkthrough of implemented user stories:
 
 **gif Walkthrough of the main features of flix**
 
-https://imgur.com/2elVE1v
+https://i.imgur.com/2elVE1v.gifv
 
 **video of network and activity bar**
-
-https://imgur.com/a/QJKiEWo
+https://i.imgur.com/3X2deNE.gifv
 ## Notes
 
 Describe any challenges encountered while building the app.
